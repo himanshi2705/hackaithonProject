@@ -1,0 +1,1 @@
+{"data_columns": ["timestamp", "temperature(c)", "air_humidity(%)", "pressure (kpa)", "wind speed (km/h)", "maize", "peanut"]}

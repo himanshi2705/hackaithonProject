@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smart Irrigation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="img"></div>
+    <div class="hometitle">
+        <h1>
+           Soil Moisture Prediction
+           <br>
+           <sub>Moisture is predicted on a scale of 0 to 100</sub>
+        </h1>
+    </div>
+    <form class="form">
+        <h2>Enter Time(in Hours) </h2>
+        <input class="area" type="text" id="uiTime" class="floatLabel" name="time" value="00">
+
+        <h2>Enter Tempreture (in Celcius)</h2>
+        <input class="area" type="text" id="uiTempre" class="floatLabel" name="tempreture" value="00">
+
+        <h2> Enter Air Humidity(%)</h2>
+        <input class="area" type="text" id="uiAirHum" class="floatLabel" name="air_hum" value="00">
+
+        <h2> Enter Pressure(KPa)</h2>
+        <input class="area" type="text" id="uiPressure" class="floatLabel" name="pressure" value="00">
+            <h2>Enter Wind speed (Km/h)</h2>
+        <input class="area" type="text" id="uiWindSpeed" class="floatLabel" name="windspeed" value="00">
+
+    </form>
+    <form class="form">    
+        <button class="submit" onclick="onClickedEstimateMoisture()" type="button">Estimate Moisture</button>
+        <div id="uiEstimatedMoist" class="result">
+            <h2>
+                
+            </h2>
+        </div>
+</form>
+</body>
+
+</html>
